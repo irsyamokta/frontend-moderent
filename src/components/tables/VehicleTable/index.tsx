@@ -139,7 +139,7 @@ export default function VehicleTable({ showHeader = true }: TableProps) {
                         {/* Table Body */}
                         <TableBody className="divide-y divide-gray-100 dark:divide-white/[0.05]">
                             {filteredVehicles.length === 0 ? (
-                                <EmptyTable colspan={12} description="Tidak ada data berita" />
+                                <EmptyTable colspan={12} description="Tidak ada data kendaraan" />
                             ) : (
                                 filteredVehicles.map((vehicle: IVehicle) => (
                                     <VehicleTableRow
